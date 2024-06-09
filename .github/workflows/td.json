@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:058264299421:task-definition/app:1",
+    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:058264299421:task-definition/app:3",
     "containerDefinitions": [
         {
             "name": "app",
@@ -7,12 +7,12 @@
             "cpu": 256,
             "memory": 512,
             "portMappings": [
-        {
-          "containerPort": 80,
-          "hostPort": 80,
-          "protocol": "tcp"
-        }
-      ],
+                {
+                    "containerPort": 80,
+                    "hostPort": 80,
+                    "protocol": "tcp"
+                }
+            ],
             "essential": true,
             "environment": [],
             "mountPoints": [],
@@ -21,14 +21,18 @@
         }
     ],
     "family": "app",
+    "taskRoleArn": "arn:aws:iam::058264299421:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::058264299421:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 3,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
         {
             "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
         },
         {
             "name": "ecs.capability.execution-role-ecr-pull"
@@ -50,7 +54,7 @@
     ],
     "cpu": "256",
     "memory": "512",
-    "registeredAt": "2024-06-09T03:07:54.864Z",
-    "registeredBy": "arn:aws:iam::058264299421:root",
+    "registeredAt": "2024-06-09T03:18:59.616Z",
+    "registeredBy": "arn:aws:iam::058264299421:user/leticia",
     "tags": []
 }
