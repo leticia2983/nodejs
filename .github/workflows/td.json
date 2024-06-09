@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:058264299421:task-definition/app:7",
+    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:058264299421:task-definition/app:9",
     "containerDefinitions": [
         {
             "name": "app",
@@ -24,7 +24,7 @@
     "taskRoleArn": "arn:aws:iam::058264299421:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::058264299421:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 7,
+    "revision": 9,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -54,7 +54,7 @@
     ],
     "cpu": "256",
     "memory": "512",
-    "registeredAt": "2024-06-09T03:48:08.628Z",
+    "registeredAt": "2024-06-09T04:21:06.520Z",
     "registeredBy": "arn:aws:iam::058264299421:user/leticia",
     "tags": []
 }
