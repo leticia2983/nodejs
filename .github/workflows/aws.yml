@@ -9,6 +9,9 @@ env:
   CONTAINER_NAME: app
   ECS_SERVICE: app_service
   ECS_TD: .github/workflows/td.json
+  AWS_ACCESS_KEY_ID : secrets.AWS_ACCESS_KEY_ID
+  AWS_ACCESS_KEY : secrets.AWS_ACCESS_KEY
+
 
 jobs:
   deploy:
